@@ -1,9 +1,10 @@
 :root {
   --card-height: 400px;
   --card-width: 500px;
-  --background-color: gold;
+  --background-color: #fad91ac6;
   --border: 1px solid #cecece;
   --border-radius: 10px;
+  --hover: rgba(255, 208, 0, 0.297)
 }
 
 * {
@@ -20,3 +21,23 @@
   border-radius: var(--border-radius);
   padding: 20px;
 }
+
+.form-control, .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control input{
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: 0;
+    margin: 5px;
+}
+
+input:focus {
+    outline: none !important;
+    border:1px solid #f0b34a;
+    box-shadow: 0 0 1px #b5c1cf;
+  }
