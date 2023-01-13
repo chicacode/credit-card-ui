@@ -2,6 +2,7 @@
   --card-height: 400px;
   --card-width: 500px;
   --background-color: #fad91ac6;
+  --background-color-strip: rgb(75, 75, 79);
   --border: 1px solid #cecece;
   --border-radius: 10px;
   --hover: rgba(255, 208, 0, 0.297)
@@ -40,4 +41,13 @@ input:focus {
     outline: none !important;
     border:1px solid #f0b34a;
     box-shadow: 0 0 1px #b5c1cf;
+  }
+
+  .card-strip{
+    height: 40px;
+    background-color: var(--background-color-strip);
+  }
+
+  .form-control.ccv{
+    width: 200px;
   }
