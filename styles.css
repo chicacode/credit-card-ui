@@ -1,0 +1,15 @@
+:root{
+    --card-height: 400px;
+    --card-width: 500px;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.credit-card-front, .credit-card-back{
+    width: var(--card-width);
+    height: var(--card-height);
+}
