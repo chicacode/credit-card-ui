@@ -5,49 +5,116 @@
   --background-color-strip: rgb(75, 75, 79);
   --border: 1px solid #cecece;
   --border-radius: 10px;
-  --hover: rgba(255, 208, 0, 0.297)
+  --hover: rgba(255, 208, 0, 0.297);
+  --icon-color: #F8F8FB;
+  --color-1: #e56997;
+  --color-2: #bd97cb;
+  --color-3: #fbc740;
+  --color-4: #66d2d6;
+  --color-5: #242424;
+  --background-body: #d9ddeb;
+  --background-body-gradiente: rgb(238, 174, 202);
+  --background-radial-gradiente: radial-gradient(
+    circle,
+    rgb(238, 192, 212) 0%,
+    rgb(171, 201, 235) 100%
+  );
+  --background-card-holder-back: rgb(195, 195, 195);
+  --background-card-holder-back-gradiente: radial-gradient(
+    circle,
+    rgba(195, 195, 195, 1) 0%,
+    rgba(36, 36, 36, 1) 100%
+  );
 }
+
+/* Hot Pink
+#E56997
+
+Lilac
+#BD97CB
+
+Gold
+#FBC740
+
+Cyan
+#66D2D6 */
 
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  background: var(--background-body-gradient);
+  background: var(--background-radial-gradiente);
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 .credit-card-front,
 .credit-card-back {
   width: var(--card-width);
   height: var(--card-height);
-  background-color: var(--background-color);
+  background-color: var(--color-5);
   border: var(--border);
   border-radius: var(--border-radius);
   padding: 20px;
 }
 
-.form-control, .image-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.credit-card-back {
+  background: var(--background-card-holder-back);
+  background: var(--background-card-holder-back-gradiente);
+}
+.form-control,
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.form-control input{
-    width: 100%;
-    padding: 10px;
-    border-radius: var(--border-radius);
-    border: 0;
-    margin: 5px;
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  border: 0;
+  margin: 5px;
 }
 
 input:focus {
-    outline: none !important;
-    border:1px solid #f0b34a;
-    box-shadow: 0 0 1px #b5c1cf;
-  }
+  outline: none !important;
+  border: 1px solid #f0b34a;
+  box-shadow: 0 0 1px #b5c1cf;
+}
 
-  .card-strip{
-    height: 40px;
-    background-color: var(--background-color-strip);
-  }
+label {
+  padding-left: 5px;
+}
 
-  .form-control.ccv{
-    width: 200px;
-  }
+.expire-container {
+  margin-top: 20px;
+}
+.expire-container-main {
+  display: flex;
+}
+
+.card-strip {
+  height: 40px;
+  background-color: var(--background-color-strip);
+}
+
+.form-control.ccv {
+  width: 200px;
+}
+
+.fa-cc-mastercard,
+.fa-cc-visa {
+  font-size: 40px;
+  color: var(--color-2);
+  padding: 0.2em;
+}
+
+.fas{
+  color: var(--icon-color);
+}
