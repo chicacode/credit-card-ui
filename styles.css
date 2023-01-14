@@ -82,9 +82,6 @@ body {
   top: 150px;
   right: 350px;
   z-index: -2;
-  /* top: 110px;
-  right: 0;
-  z-index: -2; */
 }
 
 .form-control,
@@ -126,6 +123,10 @@ label {
 .card-strip {
   height: 40px;
   background-color: var(--background-color-strip);
+}
+
+.container-cvc{
+padding-top: 20px;
 }
 
 .form-control.ccv {
