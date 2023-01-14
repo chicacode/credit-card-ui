@@ -32,12 +32,16 @@
     <div class="container">
       <form action="#">
         <div class="credit-card-front">
+          <label for="card-holder">Card Holder</label>
           <div class="form-control">
-            <input type="text" placeholder="Card Holder" />
+            
+            <input type="text" placeholder="2356 5847 1522 2010" name="card-holder" id="card-holder" length="20"/>
             <i class="fas fa-credit-card"></i>
           </div>
+          <label for="card-number">Card Number</label>
           <div class="form-control">
-            <input type="number" placeholder="Number of Card" />
+           
+            <input type="number" placeholder="Milo Yianni" name="card-number" id="card-number" length="16"/>
             <i class="fas fa-user"></i>
           </div>
         
@@ -47,8 +51,9 @@
 
             <div class="expire-container-main">
                 <div class="form-control">
-                    <input type="text" placeholder="MM" />
-                    <input type="text" placeholder="YY" />
+                  <label for="card-expiration">Expiration</label>
+                    <input type="text" placeholder="MM" length="2" name="card-month" id="card-month"/>
+                    <input type="text" placeholder="YY" length="2" name="card-year" id="card-year"/>
                   </div>
       
                   <div class="image-container">
@@ -62,12 +67,16 @@
         <div class="credit-card-back">
           <div class="card-strip"></div>
 
-          <div class="form-control ccv">
-            <input type="number" placeholder="CVV" />
+          <div class="container-cvc">
+            <label for="card-cvc" class="card-cvc">CVC/CVV</label>
+            <div class="form-control ccv">
+              <input type="number" placeholder="CVV" name="card-cvc" id="card-cvc"/>
+            </div>
           </div>
+  
         </div>
-        <div class="form-control">
-          <button type="submit">Send</button>
+        <div class="form-control-button">
+          <button type="submit" id="card-btn-submit">Send</button>
         </div>
       </form>
     </div>
