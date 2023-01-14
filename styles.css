@@ -58,11 +58,11 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .credit-card-front,
 .credit-card-back {
-  position: absolute;
   width: var(--card-width);
   height: var(--card-height);
   background-color: var(--color-5);
@@ -78,9 +78,13 @@ body {
 .credit-card-back {
   background: var(--background-card-holder-back);
   background: var(--background-card-holder-back-gradiente);
-  top: 110px;
-  right: 0;
+  position: absolute;
+  top: 150px;
+  right: 350px;
   z-index: -2;
+  /* top: 110px;
+  right: 0;
+  z-index: -2; */
 }
 
 .form-control,
@@ -148,9 +152,9 @@ label {
 }
 
 .form-control-button {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 20px;
+  position: relative;
+  top: 200px;
+  left: 500px;
 }
 
 button {
@@ -177,6 +181,18 @@ button:hover {
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
-
- 
 }
+
+/* @media only screen and (max-width: 595px) {...}
+ 
+/ Small screen devices (600px and above) /
+@media only screen and (min-width: 600px) {...}
+ 
+/ Medium screen devices (768px and above) /
+@media only screen and (min-width: 768px) {...}
+ 
+/ Big screen devices (889px and above) /
+@media only screen and (min-width: 889px) {...}
+ 
+/ Extra big screen devices (1200px and above) */
+/*@media only screen and (min-width: 1200px) {...} */
