@@ -75,6 +75,12 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  .credit-card-back {
+    display: none;
+  }
+}
+
 .credit-card-back {
   background: var(--background-card-holder-back);
   background: var(--background-card-holder-back-gradiente);
@@ -84,11 +90,19 @@ body {
   z-index: -2;
 }
 
+@media only screen and (max-width: 889px) {
+  .credit-card-back {
+    position: absolute;
+    top: 250px;
+    right: 20px;
+    z-index: -2;
+  }
+}
+
 .credit-card-back .container-cvc {
   position: relative;
   top: 150px;
 }
-
 
 .form-control,
 .image-container {
