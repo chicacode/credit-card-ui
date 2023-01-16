@@ -58,7 +58,7 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding: 50px;
 }
 
 .credit-card-front,
@@ -174,8 +174,18 @@ label {
 
 .form-control-button {
   position: relative;
-  top: 200px;
+  top: 190px;
   left: 500px;
+  margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .form-control-button {
+    position: relative;
+  top: 190px;
+  left: 400px;
+  } 
 }
 
 button {
