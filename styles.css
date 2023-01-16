@@ -79,10 +79,16 @@ body {
   background: var(--background-card-holder-back);
   background: var(--background-card-holder-back-gradiente);
   position: absolute;
-  top: 150px;
+  top: 250px;
   right: 350px;
   z-index: -2;
 }
+
+.credit-card-back .container-cvc {
+  position: relative;
+  top: 150px;
+}
+
 
 .form-control,
 .image-container {
@@ -125,8 +131,8 @@ label {
   background-color: var(--background-color-strip);
 }
 
-.container-cvc{
-padding-top: 20px;
+.container-cvc {
+  padding-top: 20px;
 }
 
 .form-control.ccv {
@@ -174,14 +180,14 @@ button:hover {
   background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
 }
 
-.card-cvc{
+.card-cvc {
   display: flex;
   justify-content: end;
 }
-.container-cvc{
-display: flex;
-flex-direction: column;
-justify-content: flex-end;
+.container-cvc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 /* @media only screen and (max-width: 595px) {...}
